@@ -14,3 +14,18 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- Disable arrows in normal and insert mode
+--
+-- -- Normal
+vim.keymap.set('n', '<left>', '<cmd>echo "Use h"<CR>')
+vim.keymap.set('n', '<right>', '<cmd>echo "Use l"<CR>')
+vim.keymap.set('n', '<up>', '<cmd>echo "Use k"<CR>')
+vim.keymap.set('n', '<down>', '<cmd>echo "Use j"<CR>')
+--
+-- -- Insert
+vim.keymap.set('i', '<left>', '<cmd>echo "Use h"<CR>')
+vim.keymap.set('i', '<right>', '<cmd>echo "Use l"<CR>')
+vim.keymap.set('i', '<up>', '<cmd>echo "Use k"<CR>')
+vim.keymap.set('i', '<down>', '<cmd>echo "Use j"<CR>')
+

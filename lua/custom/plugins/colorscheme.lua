@@ -1,6 +1,7 @@
 return {
-	"christophermca/meta5",
+	"catppuccin/nvim",
 	config = function()
-		vim.cmd([[colorscheme meta5]])
+    require("catppuccin").setup()
+    vim.cmd.colorscheme "catppuccin"
 	end
- } 
+ }
